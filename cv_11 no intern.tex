@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\newcommand*{\myfont}{\fontfamily{cmr}\selectfont}
+
+%\addtolength{\topmargin}{-.35in}
+\addtolength{\textheight}{0.7in}
+
+\definecolor{gray}{HTML}{4D4D4D}
+
+
+%\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+
+
+\header{philip}{ball}{} % Your name and current job title/field
+
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}
+74 Kings Drive, Surbiton, Surrey, KT58NH
+philipjball93@gmail.com
++44 (0)7818 447174
+\section{Languages}
+native English speaker,
+spoken Mandarin (fluent),
+basic French
+\section{Programming}
+Python, C/C++, MATLAB, R, VBA, \textcolor{gray}{\begin{myfont}\LaTeX\ \end{myfont}}
+\section{Web}
+Site: \href{https://fiorenza2.github.io}{fiorenza2.github.io}
+GitHub: \href{https://github.com/fiorenza2}{fiorenza2}
+LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2017 -- 2018}
+{The University of Cambridge}
+{MPhil {\normalfont in Machine Learning, Speech and Language Technologies }}
+{Cambridge, UK}
+{Achieved Grade: Distinction (78.09\%)
+	\begin{itemize}
+        \item Dissertation entitled "Fairness in Machine Learning with Causal Reasoning", supervised by Dr. Adrian Weller (Programme Director for AI at the Alan Turing Institute). Awarded distinction (77\%).
+        \item Produced a novel sensitivity analysis approach for counterfactual fairness and developed variational/adversarial training methodologies to learn counterfactually fair representations. 
+        \item Completed courses including: Bayesian Machine Learning, NLP, Deep Learning, Computer Vision, Reinforcement Learning, Speech, Machine Translation.
+        \item Elected the Student Representative for the MPhil course
+	\end{itemize}}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\entry
+{2011 -- 2015}
+{The University of Oxford}
+{MEng {\normalfont in Engineering Science}}
+{Oxford, UK}
+{Achieved Grade: First-Class Honours
+	\begin{itemize}
+		\item Achieved the top mark in the year for my 3rd Year Computing Project entitled `Wireless Communication Channels: Characterisation using Orthogonal Functions'.
+		\item President of the Engineering Society in my 4th Year, with over 500 paying members and a mailing list with a reach of over 1,000. Led a record breaking £20,000+ sponsorship drive.
+	\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{October 2018 -- Present}
+{Microsoft Research}
+{AI Resident}
+{Cambridge, UK}
+{Achievements:
+\begin{itemize}
+    \item Designing and researching deep reinforcement agents to play first-person shooter video games at state of the art levels.
+    \item Refactoring distributed computational source code to ensure compatability with existing platforms.
+\end{itemize}
+}
+
+\entry
+{September 2015 -- September 2017}
+{Accenture}
+{Data Science Consultant}
+{London, UK and Hong Kong}
+{Achievements:
+\begin{itemize}
+    \item Promoted to Consultant in 1.5 years (average is 2.5 years)
+    \item Advising a major bank on the Agile roll-out of a cloud analytics platform, providing data
+    science and modelling support. Working in Hong Kong, designing and running workshops,
+    as well as creating NLP and computer vision based POCs in Python.
+    \item Lead predictive modeller for the Accenture 6 Nations phone app, working in R with Opta
+    data. Correctly predicted the ultimate tournament winner and beat book maker odds
+    (using CARET, random forests, automated workflows etc.).
+    \item Lead Data Scientist for a supply chain optimisation project for a major European steel
+    manufacturer, leveraging association rules mining (ARM) to uncover hidden patterns in
+    the steel ordering process. Determined over €6.5m in savings, resulting in a successful
+    multi-million € sales bid.
+    \item Lead Business Analyst for a risk assessment and process automation work-stream in a
+    major bank. Designed the To-Be process and automation framework from the ground
+    up in VBA, whilst engaging with senior stakeholders globally across all lines of business.
+    Improved compliance and saved FTEs.
+\end{itemize}}
+
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Awards section
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{entrylist}
+	
+	%------------------------------------------------
+    \entrysmall
+    {2018}
+    {£2,000 Competition Finalist}
+    {Cambridge University Entrepreneurs}
+    {One of 4 finalists in the annual CUE university-wide entrepreneurial competition, looking for
+    funding to found a biotech/ML start-up to treat IBDs.}
+    	
+	\entrysmall
+	{2012 -- 2014}
+	{Scholarship {\normalfont for Academic Achievement}}
+	{University College, University of Oxford}
+	{Awarded in recognition of achieving 1st class results in 1st, 2nd and 3rd year examinations.}
+	
+	\entrysmall
+	{2015}
+	{College Prize}
+	{University College, University of Oxford}
+	{Awarded in recognition of achieving 1st class results in finals examinations overall.}
+	
+	%------------------------------------------------
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+Piano (Grade 8 ABRSM), bass guitar, reading, gym, badminton, squash, travel.
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\iffalse
+
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+\fi
+\end{document}
