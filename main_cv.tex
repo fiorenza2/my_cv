@@ -29,7 +29,14 @@
 \addtolength{\textheight}{0.7in}
 
 \definecolor{gray}{HTML}{4D4D4D}
-
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \usepackage{ifthen}
 \newboolean{long}
 %\usepackage[dvipsnames]{xcolor}
@@ -175,7 +182,7 @@ LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
     \entrysmall{2019}
     {Hack Cambridge Main Competition: 1st Prize}
     {Major League Hacking}
-    {Winner of the main annual Cambridge hackathon (over 300 participants), developing an in-browser private deep learning app to aid physiotherapy rehabilitation in TensorFlow.js.}
+    {Winner of the main annual Cambridge hackathon (over 300 participants; \url{https://bit.ly/2Sg48is}), developing an in-browser private deep learning app to aid physiotherapy rehabilitation in TensorFlow.js.}
 	
     \entrysmall
     {2018}
