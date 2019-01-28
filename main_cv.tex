@@ -30,7 +30,8 @@
 
 \definecolor{gray}{HTML}{4D4D4D}
 
-
+\usepackage{ifthen}
+\newboolean{long}
 %\usepackage[dvipsnames]{xcolor}
 
 \begin{document}
@@ -95,6 +96,9 @@ LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
 {Achieved Grade: First-Class Honours
 	\begin{itemize}
 		\item Achieved the top mark in the year for my 3rd Year Computing Project entitled `Wireless Communication Channels: Characterisation using Orthogonal Functions'.
+		\ifthenelse{\boolean{long}}{\item 4th Year project in entitled `Modelling High Density Wireless Networks in a Finite Domain’, developing
+        novel techniques using stochastic geometry to improve IEEE 802.11 standard wireless performance in high-density
+        scenarios.}
 		\item President of the Engineering Society in my 4th Year, with over 500 paying members and a mailing list with a reach of over 1,000. Led a record breaking £20,000+ sponsorship drive.
 	\end{itemize}}
 
@@ -135,7 +139,7 @@ LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
     \item Promoted to Consultant in 1.5 years (average is 2.5 years)
     \item Advising a major bank on the Agile roll-out of a cloud analytics platform, providing data
     science and modelling support. Working in Hong Kong, designing and running workshops,
-    as well as creating NLP and computer vision based POCs in Python.
+    as well as creating NLP and computer vision based PoCs in Python.
     \item Lead predictive modeller for the Accenture 6 Nations phone app, working in R with Opta
     data. Correctly predicted the ultimate tournament winner and beat book maker odds
     (using CARET, random forests, automated workflows etc.).
@@ -143,10 +147,11 @@ LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
     manufacturer, leveraging association rules mining (ARM) to uncover hidden patterns in
     the steel ordering process. Determined over €6.5m in savings, resulting in a successful
     multi-million € sales bid.
-    \item Lead Business Analyst for a risk assessment and process automation work-stream in a
+    \ifthenelse{\boolean{long}}{}{\item Lead Business Analyst for a risk assessment and process automation work-stream in a
     major bank. Designed the To-Be process and automation framework from the ground
     up in VBA, whilst engaging with senior stakeholders globally across all lines of business.
-    Improved compliance and saved FTEs.
+    Improved compliance and saved FTEs.}
+    
 \end{itemize}}
 
 %------------------------------------------------
@@ -161,7 +166,7 @@ LinkedIn: \href{https://uk.linkedin.com/in/philipjohnball}{philipjohnball}
 %----------------------------------------------------------------------------------------
 %	Awards section
 %----------------------------------------------------------------------------------------
-
+\pagebreak
 \section{Awards}
 
 \begin{entrylist}
