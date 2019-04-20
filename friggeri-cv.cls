@@ -7,6 +7,7 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
+\RequirePackage{fontawesome}
 
 %%%%%%%%%%
 % Colors %
@@ -48,7 +49,7 @@
 
 
 %%% modified by Karol Kozioł for ShareLaTex use
-\RequirePackage[quiet]{fontspec}
+\RequirePackage[]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont
